@@ -13,10 +13,10 @@ void calculator(){
   int? firstNum = int.parse(stdin.readLineSync()!);
 
   print('Which operation do you want to perform:');
-  print('Divide: Type(divide)');
-  print('Multiply: Type(divide)');
-  print('Add: Type(divide)');
-  print('Substract: Type(divide)');
+  print('Divide: Type(div)');
+  print('Multiply: Type(mul)');
+  print('Add: Type(add)');
+  print('Substract: Type(sub)');
   print('Square of a number: Type(square)');
   print('');
 
@@ -40,6 +40,12 @@ void calculator(){
   
   else if(operation == 'substract'){
     solute = firstNum-secondNum; 
+  }
+  
+  else if(operation == 'square'){
+    solute = firstNum*firstNum; 
+     print("Answer is: ${solute}");
+    return;
   }
   else{
     print('Enter the correct operator!');
